@@ -8,6 +8,11 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Reuse same zcompdump file each time
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
+# Set history file
+export HISTFILE=$HOME/.zsh_history
+export HISTSIZE=100000
+export HISTFILESIZE=1000000
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -95,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='vi'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 # export ARCHFLAGS="-arch arm64"
@@ -116,7 +123,7 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 # Export default AWS_PROFILE
-# export AWS_PROFILE=profile
+# export AWS_PROFILE=and
 export AWS_PROFILE=profile
 
 # Set apacxhe airflow location
