@@ -1,0 +1,9 @@
+[user]
+  name = Scott Brewerton
+  email = scott.brewerton@work.com
+[core]
+  excludesfile = /Users/scottbrewerton/.gitignore_global
+[init]
+  defaultBranch = main
+[push]
+  autoSetupRemote = true
