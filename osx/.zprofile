@@ -16,6 +16,7 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Disable Azure Functions telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
 
 # Disable annoying AWS CLI cli-pager behaviour
 export AWS_PAGER=''
