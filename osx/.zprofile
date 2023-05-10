@@ -37,7 +37,7 @@ export PATH="${GOPATH}/bin:${GOROOT}/bin:$PATH"
 export KUBECONFIG=~/.kube/config
 
 # Add Rancher to path
-export PATH="~/.rd/bin:$PATH"
+export PATH=~/.rd/bin:"$PATH"
 
 # Make python run python3
 export PATH="/opt/homebrew/opt/python@3.10/libexec/bin:$PATH"
