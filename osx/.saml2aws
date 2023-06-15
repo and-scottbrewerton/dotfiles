@@ -1,0 +1,25 @@
+[and]
+name                    = and
+app_id                  =
+url                     = https://and-digital.okta.com/home/amazon_aws/0oamddk19B8edYVsh356/272
+username                = scott.brewerton@and.digital
+provider                = Okta
+mfa                     = OKTA
+skip_verify             = false
+timeout                 = 0
+aws_urn                 = urn:amazon:webservices
+aws_session_duration    = 3600
+aws_profile             = and
+resource_id             =
+subdomain               =
+role_arn                =
+region                  = us-east-1
+http_attempts_count     =
+http_retry_delay        =
+credentials_file        =
+saml_cache              = false
+saml_cache_file         =
+target_url              =
+disable_remember_device = false
+disable_sessions        = false
+

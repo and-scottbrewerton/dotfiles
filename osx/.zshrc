@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/homebrew/bin:$PATH
 
 HOMEBREW_PREFIX=$(brew --prefix)
 export FPATH="${HOMEBREW_PREFIX}/share/zsh/site-functions:${FPATH}"
@@ -130,5 +130,14 @@ export AWS_PROFILE=profile
 export AIRFLOW_HOME=~/airflow
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/scottbrewerton/.rd/bin:$PATH"
+#export PATH="/Users/scottbrewerton/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+export PATH="/usr/local/Homebrew/opt/dotnet@6/bin:$PATH"
+
+# K8s get all in namespace
+function kall {
+  for i in $(kubectl api-resources --verbs=list --namespaced -o name | grep -v "events.events.k8s.io" | grep -v "events" | sort | uniq); do
+    echo "Resource:" $i
+    kubectl -n ${1} get --ignore-not-found ${i}
+  done
+}
