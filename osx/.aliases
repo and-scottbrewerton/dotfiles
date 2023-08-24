@@ -50,6 +50,7 @@ alias casks="abrew outdated --cask --greedy"
 # Snowflake SQL CLI client
 alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
 
+
 # Markdown files
 alias -s md=code
 
