@@ -1,6 +1,4 @@
 {
-  "audioCues.terminalCommandFailed": "off",
-  "audioCues.terminalQuickFix": "off",
   "azure.resourceFilter": [],
   "checkov.disableErrorMessage": true,
   "checkov.token": "5877ee4c-3118-4f65-8cf5-f47df45f5e3a",
@@ -96,5 +94,15 @@
     "!Split",
     "!Split sequence"
   ],
-  "snyk.advanced.cliPath": "/Users/scottbrewerton/Library/Application Support/snyk-ls/snyk-macos"
+  "snyk.advanced.cliPath": "/Users/scottbrewerton/Library/Application Support/snyk-ls/snyk-macos",
+  "snyk.yesTelemetry": false,
+  "snyk.yesCrashReport": false,
+  "python.defaultInterpreterPath": "/opt/homebrew/opt/python@3.10/libexec/bin/python",
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "off"
+  },
+  "explorer.compactFolders": false
 }
