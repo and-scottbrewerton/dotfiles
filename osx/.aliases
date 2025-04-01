@@ -7,7 +7,6 @@ alias ll="ls alF"
 alias repo="cd ~/repos"
 alias repos="cd ~/repos"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-
 # DNS
 alias xip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias flush='dscacheutil -flushcache'
@@ -31,10 +30,14 @@ alias ctx="kubectx"
 # Powershell
 #alias powershell="pwsh"
 
+# Python
+alias py="python"
+
 # Terraform
 alias tf="terraform version"
 alias t="terraform"
-alias fmt="find ./ -type f -maxdepth 5 -iname '*.tf' -exec terraform fmt "{}" \;"
+#alias fmt="find ./ -type f -maxdepth 9 -iname '*.tf' -exec terraform fmt "{}" \;"
+alias fmt="find -E ./ -type f -maxdepth 9 -regex '.*\.(tf|tfvars)' -exec terraform fmt "{}" \;"
 
 # Docker
 alias d="docker"
@@ -50,17 +53,17 @@ alias casks="abrew outdated --cask --greedy"
 # Snowflake SQL CLI client
 alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
 
-
 # Markdown files
 alias -s md=code
 
 # JSON files
 alias -s json=code
 
+
 function sts-assume() {
   "export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s" \
   $(aws sts assume-role \
-  --role-arn arn:aws:iam::000000000000:role/snowflake/dev-titanic-snowflake-role \
+  --role-arn arn:aws:iam::563487178292:role/snowflake/dev-titanic-snowflake-role \
   --role-session-name dev-titanic-secret \
   --query "Credentials.[AccessKeyId,SecretAccessKey,SessionToken]" \
   --output text))"
