@@ -1,6 +1,7 @@
 [user]
   name = Scott Brewerton
-  email = scott.brewerton@work.org
+  email = scott.brewerton@
+  signingkey = 0EDF66D83447A2D4A02FB03D2737ED0C5F9C5CAC
 
 [core]
   excludesfile = /Users/scottbrewerton/.gitignore_global
@@ -33,9 +34,11 @@
 
 [alias]
   s = 'status'
-  empty = 'git commit --allow-empty'
+  rerun = 'commit --allow-empty'
   pul = 'pull'
   unstage = 'reset HEAD --'
   last = 'log -1 HEAD'
   slog = log --graph --all --topo-order --pretty='format:%h %ai %s%d (%an)'
   one = log --graph --decorate --pretty=oneline --abbrev-commit
+  when = log --pretty='format:%h %ai %s%d (%an)' --diff-filter=A -- $1
+  rprune = 'fetch --prune'

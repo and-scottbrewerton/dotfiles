@@ -1,11 +1,11 @@
 [user]
   name = Scott Brewerton
-  email = scott.brewerton@org.dom
+  email = scott.brewerton@work.org
   signingkey = 0EDF66D83447A2D4A02FB03D2737ED0C5F9C5CAC
 
 [core]
   excludesfile = /Users/scottbrewerton/.gitignore_global
-  editor = vi
+  editor = /usr/bin/vi -f
   pager = less
 
 [init]
