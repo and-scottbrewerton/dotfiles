@@ -34,10 +34,11 @@
 
 [alias]
   s = 'status'
-  empty = 'git commit --allow-empty'
+  rerun = 'commit --allow-empty'
   pul = 'pull'
   unstage = 'reset HEAD --'
   last = 'log -1 HEAD'
   slog = log --graph --all --topo-order --pretty='format:%h %ai %s%d (%an)'
   one = log --graph --decorate --pretty=oneline --abbrev-commit
   when = log --pretty='format:%h %ai %s%d (%an)' --diff-filter=A -- $1
+  rprune = 'fetch --prune'
