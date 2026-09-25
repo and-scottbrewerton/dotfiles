@@ -1,8 +1,8 @@
 [and]
 name                    = and
 app_id                  =
-url                     = https://and-digital.okta.com/home/amazon_aws/0oamddk19B8edYVsh356/272
-username                = scott.brewerton@and.digital
+url                     = https://and-digital.okta.com/home/amazon_aws/0oamddk19B8xxxxxxxxx/xxx
+username                = scott.brewerton@work.org
 provider                = Okta
 mfa                     = OKTA
 skip_verify             = false
